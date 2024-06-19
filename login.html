@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FKPark Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="main-content-wrapper">
+            <div id="main-content">
+                <div class="login-container">
+                    <div class="logo">
+                <img src="logo.jpeg" alt="Logo">
+            </div>
+                <h2>FKPark Login</h2>
+                    <form name="loginForm" action="login.php" onsubmit="return validateLoginForm()" method="post">
+                        <input type="text" name="username" placeholder="Username">
+                        <input type="password" name="password" placeholder="Password">
+                        <select name="role">
+                            <option value="Student">Student</option>
+                            <option value="Staff">Staff</option>
+                        </select>
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
